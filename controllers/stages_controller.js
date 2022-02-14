@@ -3,6 +3,9 @@ const stages = require('express').Router()
 const db = require('../models/stage')
 const { Stage } = db
 
+// DEPENDENCIES 
+const { Op } = require('sequelize')
+
 stages.get('/', async (req, res) => {
     try {
         const foundStages = await Stage.findAll({
