@@ -1,6 +1,6 @@
 // DEPENDENCIES
 const bands = require('express').Router()
-const db = require('../models')
+const db = require('../models/band')
 const { Band } = db
 
 // DEPENDENCIES 
